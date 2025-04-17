@@ -1,49 +1,22 @@
-# MacOS Gemini Overlay
+# MacOS_Gemini_overlay
+**This is is based on *macos-grok-overlay* by tchlux**
 
-A simple macOS overlay application for pinning `gemini.google.com` to a dedicated window and key command `option+space`.
+Frustrated with OpenAI or ChatGPT's performance? Want to try Google Gemini but prefer a dedicated client over a website for better efficiency? This tool offers a solution. Similar to the 'Option + Space' shortcut in some ChatGPT clients, it provides overlay window access. However, instead of limiting you to one conversation, this tool grants broader access to Gemini's features within the overlay.
+<img width="1710" alt="Screenshot 2025-04-17 at 15 07 31" src="https://github.com/user-attachments/assets/a667648b-d656-4427-baf1-d7aef92e286e" />
 
-## Quick Start
-
+## Installation:
 To run the application directly:
 
 1. Open Terminal
 2. Navigate to this directory
-3. Run `./macos-gemini-overlay.sh`
+3. Run `./run.py`
 
 ## Creating a Clickable App
+Will update an installable dmg version very soon.
 
-To create a proper clickable macOS application:
-
-### Option 1: Using Platypus (recommended)
-
-1. Download and install Platypus from: https://sveinbjorn.org/platypus
-2. Open Platypus
-3. Set the following options:
-   - Script Type: Shell
-   - Script Path: Select `macos-gemini-overlay.sh`
-   - App Name: Gemini Overlay
-   - Interface: None
-   - Icon: You can use the file `macos_gemini_overlay/logo/icon.icns`
-   - Identifier: com.yourname.geminioverlay
-   - Check "Run in background"
-4. Click "Create App" and select a destination
-
-### Option 2: Using Script Editor
-
-1. Open Script Editor (found in Applications/Utilities)
-2. Paste the following:
-   ```applescript
-   do shell script "cd " & quoted form of (POSIX path of (path to me as text) & "Contents/Resources") & " && ./macos-gemini-overlay.sh"
-   ```
-3. Save as an Application
-4. Create a folder structure as follows:
-   ```
-   YourApp.app/
-     Contents/
-       Resources/
-         (place all files from this folder here)
-   ```
 
 ## Usage
+Once installed, open it, sign in with your google account, set your favourite hotkey, and simply start your work flow. 
 
-Once installed, press `Option+Space` to show/hide the Gemini overlay window. 
+# Tips:
+Please allow accessibility control for this tool because it relies on it to access keyboard input in order to set a hotkey
