@@ -6,7 +6,7 @@ Frustrated with OpenAI or ChatGPT's performance? Want to try Google Gemini but p
 <img width="1710" alt="Screenshot 2025-04-17 at 15 07 31" src="https://github.com/user-attachments/assets/a667648b-d656-4427-baf1-d7aef92e286e" />
 
 ## installation
-Download Gemini.dmg, install it, and you are good to go!
+Download *Gemini.dmg* from this repo, install it, and you are good to go!
 
 ## Running in the terminal:
 Pull this repo and run *run.py* in terminal, you may need to solve dependency issues by yourself.
